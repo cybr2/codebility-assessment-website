@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+
+:root {
+    font-size: 16px;
+  }
+
+body{
+    font-family: 'Instrument Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+footer{
+    color: rgba(18, 18, 18, 0.75);
+}
+
+h1 {
+    @apply text-2xl lg:text-5xl capitalize font-sans  text-center;
+  }
+
+footer a {
+    @apply relative text-gray-900 inline-block;
+  }
+  
+footer a::after {
+    content: '';
+    @apply absolute left-0 bottom-0 h-[2px] w-0 bg-gray-500 transition-all duration-900 ease-in-out;
+  }
+  
+footer a:hover::after {
+    @apply w-50;
+  }
+
